@@ -63,7 +63,6 @@ for i in urls:
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-popup-blocking")
     # Установка Webdriver
-    service = Service(ChromeDriverManager().install())
     # Инициализация драйвера с объектами Service и Options
     driver = uc.Chrome(options=options) 
     retry_count = 0
